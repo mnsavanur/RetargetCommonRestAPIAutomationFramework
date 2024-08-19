@@ -1,0 +1,928 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test ExecutionReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 19, 2024 12:37:37 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name - CreateAirline_DuplicateID</p>
+            <p class="text-sm">
+              <span>12:37:39 PM</span> / <span>00:00:04:624</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Name - CreateAirline_DuplicateID</h5>
+<span class='badge badge-success'>08.19.2024 12:37:39 PM</span>
+<span class='badge badge-danger'>08.19.2024 12:37:43 PM</span>
+<span class='badge badge-default'>00:00:04:624</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create airline with existing airline ID</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:42 PM</td>
+        <td>
+          <span class='badge white-text grey'>Endpoint is https://api.instantwebtools.net/v1/airlines</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:42 PM</td>
+        <td>
+          <span class='badge white-text grey'>Method is POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:42 PM</td>
+        <td>
+          <span class='badge white-text grey'>Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:42 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:42 PM</td>
+        <td>
+          <span class='badge white-text grey'>Request body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"id":276670,"name":"AirlinePluto1","country":"India","logo":"Logo1","slogan":"Slogan1","head_quaters":"Delhi","website":"Website1","established":"1999"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response status is 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 19 Aug 2024 07:07:43 GMT</td></tr><tr><td>Content-Type</td><td>text/html; charset=utf-8</td></tr><tr><td>Content-Length</td><td>1086</td></tr><tr><td>X-Request-Id</td><td>ec25f600-0122-4304-b190-3396b6f86584</td></tr><tr><td>Cache-Control</td><td>no-store, max-age=0</td></tr><tr><td>Accept-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Critical-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Vary</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>X-Adblock-Key</td><td>MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==</td></tr><tr><td>Set-Cookie</td><td>parking_session=ec25f600-0122-4304-b190-3396b6f86584; expires=Mon, 19 Aug 2024 07:22:43 GMT; path=/</td></tr><tr><td>Connection</td><td>close</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create(<html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==" style="background: #2B2B2B;">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"/>
+    <link rel="preconnect" href="https://www.google.com" crossorigin="crossorigin"/>
+  </head>
+  <body>
+    <div id="target" style="opacity: 0"/>
+    <script>window.park = "eyJ1dWlkIjoiZWMyNWY2MDAtMDEyMi00MzA0LWIxOTAtMzM5NmI2Zjg2NTg0IiwicGFnZV90aW1lIjoxNzI0MDUxMjYzLCJwYWdlX3VybCI6Imh0dHBzOi8vYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQvdjEvYWlybGluZXMiLCJwYWdlX21ldGhvZCI6IlBPU1QiLCJwYWdlX3JlcXVlc3QiOnt9LCJwYWdlX2hlYWRlcnMiOnt9LCJob3N0IjoiYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQiLCJpcCI6IjEyMi4xNzEuMjMuMTAzIn0K";</script>
+    <script src="/beaGOcfKZ.js"/>
+  </body>
+</html>); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Endpoint is https://api.instantwebtools.net/v1/airlines</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Method is POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Request body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"id":276670,"name":"AirlinePluto1","country":"India","logo":"Logo1","slogan":"Slogan1","head_quaters":"Delhi","website":"Website1","established":"1999"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response status is 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 19 Aug 2024 07:07:44 GMT</td></tr><tr><td>Content-Type</td><td>text/html; charset=utf-8</td></tr><tr><td>Content-Length</td><td>1086</td></tr><tr><td>X-Request-Id</td><td>01869351-73cc-49a3-954f-2f412aaad028</td></tr><tr><td>Cache-Control</td><td>no-store, max-age=0</td></tr><tr><td>Accept-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Critical-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Vary</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>X-Adblock-Key</td><td>MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==</td></tr><tr><td>Set-Cookie</td><td>parking_session=01869351-73cc-49a3-954f-2f412aaad028; expires=Mon, 19 Aug 2024 07:22:44 GMT; path=/</td></tr><tr><td>Connection</td><td>close</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create(<html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==" style="background: #2B2B2B;">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"/>
+    <link rel="preconnect" href="https://www.google.com" crossorigin="crossorigin"/>
+  </head>
+  <body>
+    <div id="target" style="opacity: 0"/>
+    <script>window.park = "eyJ1dWlkIjoiMDE4NjkzNTEtNzNjYy00OWEzLTk1NGYtMmY0MTJhYWFkMDI4IiwicGFnZV90aW1lIjoxNzI0MDUxMjY0LCJwYWdlX3VybCI6Imh0dHBzOi8vYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQvdjEvYWlybGluZXMiLCJwYWdlX21ldGhvZCI6IlBPU1QiLCJwYWdlX3JlcXVlc3QiOnt9LCJwYWdlX2hlYWRlcnMiOnt9LCJob3N0IjoiYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQiLCJpcCI6IjEyMi4xNzEuMjMuMTAzIn0K";</script>
+    <script src="/bMgvgpfno.js"/>
+  </body>
+</html>); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <span class='badge white-text red'>expected [400] but found [200]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:43 PM</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:110)<br> org.testng.Assert.failNotEquals(Assert.java:1413)<br> org.testng.Assert.assertEqualsImpl(Assert.java:149)<br> org.testng.Assert.assertEquals(Assert.java:131)<br> org.testng.Assert.assertEquals(Assert.java:1240)<br> org.testng.Assert.assertEquals(Assert.java:1274)<br> airlines.AirlineTestsScenarios.createAirlineAndVerify(AirlineTestsScenarios.java:32)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name - CreateAirline_OnlyID</p>
+            <p class="text-sm">
+              <span>12:37:43 PM</span> / <span>00:00:00:508</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Name - CreateAirline_OnlyID</h5>
+<span class='badge badge-success'>08.19.2024 12:37:43 PM</span>
+<span class='badge badge-danger'>08.19.2024 12:37:44 PM</span>
+<span class='badge badge-default'>00:00:00:508</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create airline with just ID</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Endpoint is https://api.instantwebtools.net/v1/airlines</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Method is POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Request body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"id":138953}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response status is 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 19 Aug 2024 07:07:44 GMT</td></tr><tr><td>Content-Type</td><td>text/html; charset=utf-8</td></tr><tr><td>Content-Length</td><td>1086</td></tr><tr><td>X-Request-Id</td><td>6aaf2cfd-d93e-4183-9097-ee42e29035b9</td></tr><tr><td>Cache-Control</td><td>no-store, max-age=0</td></tr><tr><td>Accept-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Critical-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Vary</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>X-Adblock-Key</td><td>MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==</td></tr><tr><td>Set-Cookie</td><td>parking_session=6aaf2cfd-d93e-4183-9097-ee42e29035b9; expires=Mon, 19 Aug 2024 07:22:44 GMT; path=/</td></tr><tr><td>Connection</td><td>close</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create(<html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==" style="background: #2B2B2B;">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"/>
+    <link rel="preconnect" href="https://www.google.com" crossorigin="crossorigin"/>
+  </head>
+  <body>
+    <div id="target" style="opacity: 0"/>
+    <script>window.park = "eyJ1dWlkIjoiNmFhZjJjZmQtZDkzZS00MTgzLTkwOTctZWU0MmUyOTAzNWI5IiwicGFnZV90aW1lIjoxNzI0MDUxMjY0LCJwYWdlX3VybCI6Imh0dHBzOi8vYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQvdjEvYWlybGluZXMiLCJwYWdlX21ldGhvZCI6IlBPU1QiLCJwYWdlX3JlcXVlc3QiOnt9LCJwYWdlX2hlYWRlcnMiOnt9LCJob3N0IjoiYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQiLCJpcCI6IjEyMi4xNzEuMjMuMTAzIn0K";</script>
+    <script src="/bnXKklmrG.js"/>
+  </body>
+</html>); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text red'>expected [400] but found [200]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:110)<br> org.testng.Assert.failNotEquals(Assert.java:1413)<br> org.testng.Assert.assertEqualsImpl(Assert.java:149)<br> org.testng.Assert.assertEquals(Assert.java:131)<br> org.testng.Assert.assertEquals(Assert.java:1240)<br> org.testng.Assert.assertEquals(Assert.java:1274)<br> airlines.AirlineTestsScenarios.createAirlineAndVerify(AirlineTestsScenarios.java:32)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name - CreateAirline_WithoutID</p>
+            <p class="text-sm">
+              <span>12:37:44 PM</span> / <span>00:00:00:556</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Name - CreateAirline_WithoutID</h5>
+<span class='badge badge-success'>08.19.2024 12:37:44 PM</span>
+<span class='badge badge-danger'>08.19.2024 12:37:44 PM</span>
+<span class='badge badge-default'>00:00:00:556</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create airline without ID</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Endpoint is https://api.instantwebtools.net/v1/airlines</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Method is POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Request body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"name":"AirlinePluto4","country":"Canada","logo":"Logo4","slogan":"Slogan4","head_quaters":"Toronto","website":"Website4","established":"2002"}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response status is 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 19 Aug 2024 07:07:45 GMT</td></tr><tr><td>Content-Type</td><td>text/html; charset=utf-8</td></tr><tr><td>Content-Length</td><td>1086</td></tr><tr><td>X-Request-Id</td><td>b74d737d-30a1-47c0-8282-aca38b3a0589</td></tr><tr><td>Cache-Control</td><td>no-store, max-age=0</td></tr><tr><td>Accept-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Critical-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Vary</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>X-Adblock-Key</td><td>MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==</td></tr><tr><td>Set-Cookie</td><td>parking_session=b74d737d-30a1-47c0-8282-aca38b3a0589; expires=Mon, 19 Aug 2024 07:22:45 GMT; path=/</td></tr><tr><td>Connection</td><td>close</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create(<html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==" style="background: #2B2B2B;">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"/>
+    <link rel="preconnect" href="https://www.google.com" crossorigin="crossorigin"/>
+  </head>
+  <body>
+    <div id="target" style="opacity: 0"/>
+    <script>window.park = "eyJ1dWlkIjoiYjc0ZDczN2QtMzBhMS00N2MwLTgyODItYWNhMzhiM2EwNTg5IiwicGFnZV90aW1lIjoxNzI0MDUxMjY1LCJwYWdlX3VybCI6Imh0dHBzOi8vYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQvdjEvYWlybGluZXMiLCJwYWdlX21ldGhvZCI6IlBPU1QiLCJwYWdlX3JlcXVlc3QiOnt9LCJwYWdlX2hlYWRlcnMiOnt9LCJob3N0IjoiYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQiLCJpcCI6IjEyMi4xNzEuMjMuMTAzIn0K";</script>
+    <script src="/bpmpJJXHq.js"/>
+  </body>
+</html>); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <span class='badge white-text red'>Failed to parse the JSON document</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:44 PM</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)<br> io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)<br> io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)<br> io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br> restUtils.AssertionUtils.assertExpectedValuesWithJsonPath(AssertionUtils.java:20)<br> airlines.AirlineTestsScenarios.createAirlineAndVerify(AirlineTestsScenarios.java:48)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name - CreateAirline_HappyPath</p>
+            <p class="text-sm">
+              <span>12:37:44 PM</span> / <span>00:00:00:528</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Name - CreateAirline_HappyPath</h5>
+<span class='badge badge-success'>08.19.2024 12:37:44 PM</span>
+<span class='badge badge-danger'>08.19.2024 12:37:45 PM</span>
+<span class='badge badge-default'>00:00:00:528</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Create airline with expected request payload</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Endpoint is https://api.instantwebtools.net/v1/airlines</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Method is POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Request body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"id":8658,"name":"AirlinePluto5","country":"China","logo":"Logo5","slogan":"Slogan5","head_quaters":"Shangai","website":"Website5","established":"2003"}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response status is 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response Headers are </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Mon, 19 Aug 2024 07:07:45 GMT</td></tr><tr><td>Content-Type</td><td>text/html; charset=utf-8</td></tr><tr><td>Content-Length</td><td>1086</td></tr><tr><td>X-Request-Id</td><td>74e3934b-4aed-43ac-9a5b-1359e1c6fe3b</td></tr><tr><td>Cache-Control</td><td>no-store, max-age=0</td></tr><tr><td>Accept-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Critical-Ch</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>Vary</td><td>sec-ch-prefers-color-scheme</td></tr><tr><td>X-Adblock-Key</td><td>MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==</td></tr><tr><td>Set-Cookie</td><td>parking_session=74e3934b-4aed-43ac-9a5b-1359e1c6fe3b; expires=Mon, 19 Aug 2024 07:22:45 GMT; path=/</td></tr><tr><td>Connection</td><td>close</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text grey'>Response body is </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create(<html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_sWsY/futgTs8uqmTeY9+jsPIi/LOs5iJt2hbHBLGx4QJxAtwj+IG6msNkh3ez6tmTSbdtyU7dkgqH9pEdRbAXQ==" style="background: #2B2B2B;">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"/>
+    <link rel="preconnect" href="https://www.google.com" crossorigin="crossorigin"/>
+  </head>
+  <body>
+    <div id="target" style="opacity: 0"/>
+    <script>window.park = "eyJ1dWlkIjoiNzRlMzkzNGItNGFlZC00M2FjLTlhNWItMTM1OWUxYzZmZTNiIiwicGFnZV90aW1lIjoxNzI0MDUxMjY1LCJwYWdlX3VybCI6Imh0dHBzOi8vYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQvdjEvYWlybGluZXMiLCJwYWdlX21ldGhvZCI6IlBPU1QiLCJwYWdlX3JlcXVlc3QiOnt9LCJwYWdlX2hlYWRlcnMiOnt9LCJob3N0IjoiYXBpLmluc3RhbnR3ZWJ0b29scy5uZXQiLCJpcCI6IjEyMi4xNzEuMjMuMTAzIn0K";</script>
+    <script src="/bxyVnShXb.js"/>
+  </body>
+</html>); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <span class='badge white-text red'>Failed to parse the JSON document</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:37:45 PM</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)<br> io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)<br> io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)<br> io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br> restUtils.AssertionUtils.assertExpectedValuesWithJsonPath(AssertionUtils.java:20)<br> airlines.AirlineTestsScenarios.createAirlineAndVerify(AirlineTestsScenarios.java:48)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:566)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1541)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 19, 2024 12:37:37 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 19, 2024 12:37:45 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='12%'><b>8</b> events failed,
+<b data-tooltip='%'>55</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Test Name - CreateAirline_DuplicateID":4.624,"Test Name - CreateAirline_OnlyID":0.508,"Test Name - CreateAirline_WithoutID":0.556,"Test Name - CreateAirline_HappyPath":0.528
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 8,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 55
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
